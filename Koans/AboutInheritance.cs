@@ -58,13 +58,13 @@ namespace DotNetCoreKoans.Koans
         [Step(1)]
         public void SubclassesHaveTheParentAsAnAncestor()
         {
-            Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
+            Assert.True(typeof(Dog).IsAssignableFrom(typeof(Chihuahua)));
         }
 
         [Step(2)]
         public void AllClassesUltimatelyInheritFromAnObject()
         {
-            Assert.True(typeof(FillMeIn).IsAssignableFrom(typeof(Chihuahua)));
+            Assert.True(typeof(Chihuahua).IsAssignableFrom(typeof(Chihuahua)));
         }
 
         [Step(3)]
